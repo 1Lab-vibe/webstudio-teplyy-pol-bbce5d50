@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 25 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 25 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 25% 12%;
+
+    --primary: 18 78% 48%;
+    --primary-foreground: 40 33% 98%;
+    --primary-glow: 22 85% 58%;
+
+    --secondary: 30 15% 94%;
+    --secondary-foreground: 25 25% 12%;
+
+    --muted: 30 15% 94%;
+    --muted-foreground: 25 10% 40%;
+
+    --accent: 30 20% 90%;
+    --accent-foreground: 25 25% 12%;
+
+    --destructive: 0 84% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 145 55% 38%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 18 78% 48%;
+
+    --radius: 0.625rem;
+
+    --gradient-warm: linear-gradient(135deg, hsl(18 78% 48%), hsl(22 85% 58%));
+    --gradient-subtle: linear-gradient(180deg, hsl(40 33% 98%), hsl(30 20% 95%));
+    --shadow-soft: 0 4px 20px -8px hsl(25 25% 12% / 0.15);
+    --shadow-card: 0 2px 12px -4px hsl(25 25% 12% / 0.08);
+    --shadow-cta: 0 8px 24px -8px hsl(18 78% 48% / 0.45);
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body { @apply bg-background text-foreground antialiased; font-family: 'Inter', system-ui, sans-serif; }
+  h1, h2, h3, h4 { font-family: 'Manrope', system-ui, sans-serif; letter-spacing: -0.02em; }
+}
