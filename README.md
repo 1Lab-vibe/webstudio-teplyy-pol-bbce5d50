@@ -1,2 +1,3 @@
-# webstudio-teplyy-pol-bbce5d50
-Web Studio landing for Теплый Пол
+# Welcome to your Lovable project
+
+TODO: Document your project here
